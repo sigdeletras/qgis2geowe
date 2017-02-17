@@ -1,6 +1,6 @@
 # qgis2geowe
 Script Python para generar un proyecto GeoWE desde QGIS
-![qgis2geowe](qgis2geowe/img/qgis2geowe.png)
+![qgis2geowe](img/qgis2geowe.png)
 
 ##Descripción
 Desde la versión 1.4.8 Beta la plataforma de edición de datos en WEB [GeoWE](geowe.org), permite crear un archivo de proyecto con las capas utilizadas. 
