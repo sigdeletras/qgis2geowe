@@ -3,7 +3,7 @@ Script Python para generar un proyecto GeoWE desde QGIS
 
 ##Descripción
 Desde la versión 1.4.8 Beta la plataforma de edición de datos en WEB [GeoWE](geowe.org), permite crear un archivo de proyecto con las capas utilizadas. 
-Este script ejecutado desde la consola de Python de QGIS crea un archivo de GeoWE a partir de un conjunto de capas cargadas.
+Este script ejecutado desde la consola de Python de QGIS crea un archivo de GeoWE a partir de las capas seleccionadas.
 
 La especificaciones del fichero de proyecto GeoWE pueden consultarse en este [enlace](http://www.geowe.org/guide/proyectos/index.html)
 
@@ -19,8 +19,6 @@ La especificaciones del fichero de proyecto GeoWE pueden consultarse en este [en
 *Nota: El proyecto se creará en el directorio definido.*
 
 ##2do
-- Añadir solo capas selecionadas o capas visibles
-- Eliminar los geojson generados
 - Usar el mismo directorio del archivo py para crear el proyecto
 - Plugin de QGIS
 - Crear un script inverso: de GeoWE a QGIS
