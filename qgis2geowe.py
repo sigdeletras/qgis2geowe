@@ -35,7 +35,7 @@ prjurl = '/home/user/Documentos/carpeta'
 #prjurl = 'C:/carpeta'
 
 # Nombre del proyecto GeoWE
-geoweprojName = 'geowe-project-prueba_msg'
+geoweprojName = 'geowe-project-qgis'
 
 selected_layers = iface.layerTreeView().selectedLayers()
 
