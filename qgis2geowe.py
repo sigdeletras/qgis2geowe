@@ -15,6 +15,7 @@ import json
 import time
 import shutil
 from qgis.gui import QgsMessageBar
+from PyQt4.QtGui import QMessageBox
 
 
 def rgb_to_hex(rgb):
