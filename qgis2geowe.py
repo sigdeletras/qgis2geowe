@@ -31,8 +31,8 @@ geoweprojDate = (time.strftime("%d/%m/%Y"))
 
 # Variable con directorio para salvar el proyecto
 
-prjurl = '/home/user/Documentos/carpeta'
-#prjurl = 'C:/carpeta'
+prjurl = '/home/user/folder'
+#prjurl = 'C:/folder'
 
 # Nombre del proyecto GeoWE
 geoweprojName = 'geowe-project-qgis'
@@ -46,8 +46,8 @@ if selected_layers:
 
     zf = zipfile.ZipFile(prjurl + geoweprojName, "w")
 
-    # CreaciÃ³n de proyecto
-    fo = open(prjurl + geoweprojName + ".prj", "w")
+    # Creación de proyecto
+    fo = open(prjurl + "geowe-project.prj", "w")
 
     # Metadatos de proyecto
     fo.write('{"version": "' + geoweprojVersion + '", "title": "'
@@ -110,9 +110,9 @@ if selected_layers:
 
     fo.write('] }')
     fo.close()
-
-    zf.write(prjurl + geoweprojName + ".prj")
-    os.remove(prjurl + geoweprojName + ".prj")
+    projfile = prjurl + "geowe-project.prj"
+    zf.write(projfile,os.path.basename(projfile))
+    os.remove(prjurl + "geowe-project.prj")
     zf.close()
 
     shutil.rmtree(geojsonfolder)
