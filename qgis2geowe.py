@@ -44,7 +44,7 @@ selected_layers = iface.layerTreeView().selectedLayers()
 if selected_layers:
     # GeneraciÃ³n de zip de proyecto
 
-    zf = zipfile.ZipFile(prjurl + geoweprojName, "w")
+    zf = zipfile.ZipFile(prjurl + geoweprojName +".zip", "w")
 
     # Creación de proyecto
     fo = open(prjurl + "geowe-project.prj", "w")
@@ -77,7 +77,7 @@ if selected_layers:
 
         double_encode = json.dumps(jsonString)
 
-        fo.write('{"name": "' + l.name() + '", "content": ')
+        fo.write('{"name": "' + l.name().encode('utf-8') + '", "content": ')
 
         fo.write(double_encode)
 
